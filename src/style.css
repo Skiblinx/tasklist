@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ecf0f1;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-family: "Tomorrow", sans-serif;
+}
+p {
+  margin: 0;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#app > div {
+  gap: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.adding-todo {
+  gap: 20px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d416a8;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.199);
+}
+.adding-todo > span {
+  gap: 10px;
+  display: flex;
+}
+.adding-todo input {
+  width: 30vw;
+  border: none;
+  height: 40px;
+  color: #333;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+}
+.adding-todo button {
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 800;
+  border-radius: 3px;
+  background-color: #2ecc71;
+  font-family: "Poppins", sans-serif;
+}
+.todo-holder {
+  gap: 15px;
+  width: 50%;
+  display: flex;
+  max-width: 95%;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+}
+.each-todo {
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 5px;
+  word-wrap: break-word;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0.7px 0px 1px rgba(128, 128, 128, 0.342);
+}
+.each-todo > :first-child {
+  gap: 5px;
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+}
+.each-todo > span > button {
+  border: none;
+  padding: 5px;
+  display: flex;
+  border-radius: 3px;
+  width: fit-content;
+  align-items: center;
+}
+.each-todo > span > button > svg {
+  width: 20px;
+  height: 20px;
+}
+.each-todo > span > .delete {
+  color: red;
+}
+.each-todo input {
+  border: none;
+  outline: none;
+  outline: none;
+  color: #333;
+  font-size: 16px;
+  padding: 0 10px;
+  background-color: #ecf0f1;
+  font-family: "Poppins", sans-serif;
+}
+@media only screen and (max-width: 478px) {
+  .todo-holder {
+    justify-content: center;
+  }
+}
